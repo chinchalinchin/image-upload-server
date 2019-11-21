@@ -15,6 +15,8 @@ var store = multer.diskStorage({
 var upload = multer({storage: store})
 const app = express();
 
+app.use(helper.getDebugMiddleware());
+
 app.get('/', function(req, res){ 
     helper.log("Serving 'upload-form.html'","/")
     res.status(200).sendFile(__dirname+'/html/upload-form.html'); 

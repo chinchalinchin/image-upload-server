@@ -1,5 +1,5 @@
 {
-  "name": "Image Upload Server",
+  "name": "image-upload-server",
   "version": "1.0.0",
   "description": "a nodeJS server that uses the npm package multer to upload images to a local folder using HTML forms and POSTs.",
   "main": "app.js",
