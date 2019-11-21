@@ -1,0 +1,24 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "description": "something",
+  "main": "app.js",
+  "scripts": {
+    "start": "rm -r uploads && mkdir uploads && node ./app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "asdf"
+  },
+  "keywords": [
+    "asdf"
+  ],
+  "author": "asdf",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "multer": "^1.4.2",
+    "query-string": "^6.9.0"
+  }
+}
