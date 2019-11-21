@@ -15,7 +15,7 @@ var store = multer.diskStorage({
 var upload = multer({storage: store})
 const app = express();
 
-app.use(helper.getDebugMiddleware());
+app.use(helper.getDebugMiddleware(true));
 
 app.get('/', function(req, res){ 
     helper.log("Serving 'upload-form.html'","/")
@@ -28,7 +28,7 @@ app.get('/success', function(req, res){
 })
  
 app.post('/', upload.single('image'), function(req, res){
-    helper.log(`Incoming POST file ${req.file.filename}`, '/')
+    helper.log(`Incoming POST: ${req.file.filename}`, '/')
     helper.log(`Saving file to ${req.file.destination}`, '/')
     res.status(302).redirect('/success');
 });

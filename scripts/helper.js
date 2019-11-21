@@ -25,11 +25,11 @@ function getCurrentTime(){
 function getDebugMiddleware(debug){
     return function(req, res, next){
         if(debug){ 
-            log(`${req.url}`, 'Incoming Request');
+            log(`${req.url}`, 'DEBUGGER: Incoming Request');
             incomingQuery = queryString.parseUrl(req.url).query
             if(incomingQuery){
                 Object.keys(incomingQuery).forEach((key)=>{
-                    log(`Query Param {"${key}": "${incomingQuery[key]}"}`, 'Incoming Request');
+                    log(`Query Param {"${key}": "${incomingQuery[key]}"}`, 'DEBUGGER: Incoming Request');
                 })
             }
         }
