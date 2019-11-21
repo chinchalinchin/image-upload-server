@@ -1,4 +1,4 @@
-<h1>Introduction<h1><br>
+<h1>Introduction</h1><br>
 
 A simple NodeJS server which serves up an HTML Form that posts an image back to the Node Server. The HTML Form uses the <i>action<i> property to form an HTTP request on the client's browser and then the <i>enctype</i> property to ensure the image is encoded in an format NodeJS can parse.
 
