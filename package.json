@@ -1,19 +1,20 @@
 {
-  "name": "example",
+  "name": "Image Upload Server",
   "version": "1.0.0",
-  "description": "something",
+  "description": "a nodeJS server that uses the npm package multer to upload images to a local folder using HTML forms and POSTs.",
   "main": "app.js",
   "scripts": {
     "start": "rm -r uploads && mkdir uploads && node ./app.js"
   },
   "repository": {
     "type": "git",
-    "url": "asdf"
+    "url": "https://github.com/chinchalinchin/image-upload-server"
   },
   "keywords": [
-    "asdf"
+    "nodejs", "express", "multer", "image", "file",
+    "upload", "jpeg", "png"
   ],
-  "author": "asdf",
+  "author": "Grant Moore",
   "license": "UNLICENSED",
   "dependencies": {
     "body-parser": "^1.19.0",
